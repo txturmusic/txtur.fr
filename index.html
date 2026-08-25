@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TXTUR</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #ECECEA;
+      color: #151515;
+      font-family: "Courier New", Courier, monospace;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: min(880px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 90px 0 60px;
+    }
+
+    header {
+      margin-bottom: 90px;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.32em;
+      margin: 0 0 18px;
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: #686868;
+    }
+
+    .mix {
+      border-top: 1px solid #b8b8b5;
+      padding: 28px 0;
+    }
+
+    .mix-code {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .mix-name {
+      font-size: 12px;
+      color: #686868;
+      margin-bottom: 24px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .listen {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .listen:hover {
+      opacity: 0.55;
+    }
+
+    .platforms {
+      border-top: 1px solid #b8b8b5;
+      margin-top: 35px;
+      padding-top: 28px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .platforms a {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    footer {
+      margin-top: 110px;
+      padding-top: 24px;
+      border-top: 1px solid #b8b8b5;
+      font-size: 10px;
+      color: #777;
+      letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        width: calc(100% - 40px);
+        padding-top: 55px;
+      }
+
+      header {
+        margin-bottom: 70px;
+      }
+
+      .logo {
+        font-size: 25px;
+      }
+
+      footer {
+        margin-top: 90px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="page">
+
+    <header>
+      <h1 class="logo">T X T U R</h1>
+      <p class="tagline">Electronic music through matter and texture.</p>
+    </header>
+
+    <section class="mix">
+      <div class="mix-code">TMR_001</div>
+      <div class="mix-name">Techno Mixtur Radio</div>
+
+      <a
+        class="listen"
+        href="https://www.youtube.com/watch?v=zc9zYC2cApA"
+        target="_blank"
+        rel="noopener noreferrer">
+        → FULL MIX / YOUTUBE
+      </a>
+    </section>
+
+    <nav class="platforms">
+
+      <a
+        href="https://soundcloud.com/txturmusic"
+        target="_blank"
+        rel="noopener noreferrer">
+        → SOUNDCLOUD
+      </a>
+
+      <a
+        href="https://www.youtube.com/@txtur_music"
+        target="_blank"
+        rel="noopener noreferrer">
+        → YOUTUBE
+      </a>
+
+    </nav>
+
+    <footer>
+      TXTUR © 2026
+    </footer>
+
+  </main>
+
+</body>
+</html>
