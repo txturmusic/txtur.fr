@@ -33,14 +33,7 @@
       font-size: 30px;
       font-weight: 700;
       letter-spacing: 0.32em;
-      margin: 0 0 18px;
-    }
-
-    .tagline {
       margin: 0;
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      color: #686868;
     }
 
     .mix {
@@ -73,7 +66,8 @@
       letter-spacing: 0.08em;
     }
 
-    .listen:hover {
+    .listen:hover,
+    .platforms a:hover {
       opacity: 0.55;
     }
 
@@ -82,8 +76,9 @@
       margin-top: 35px;
       padding-top: 28px;
       display: flex;
-      gap: 32px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
     }
 
     .platforms a {
@@ -128,12 +123,19 @@
 
     <header>
       <h1 class="logo">T X T U R</h1>
-      <p class="tagline">Electronic music through matter and texture.</p>
     </header>
 
+    <!-- TMR_001 -->
+
     <section class="mix">
-      <div class="mix-code">TMR_001</div>
-      <div class="mix-name">Techno Mixtur Radio</div>
+
+      <div class="mix-code">
+        TMR_001
+      </div>
+
+      <div class="mix-name">
+        Techno Mixtur Radio
+      </div>
 
       <a
         class="listen"
@@ -142,7 +144,32 @@
         rel="noopener noreferrer">
         → FULL MIX / YOUTUBE
       </a>
+
     </section>
+
+    <!-- HMR_001 -->
+
+    <section class="mix">
+
+      <div class="mix-code">
+        HMR_001
+      </div>
+
+      <div class="mix-name">
+        House Mixtur Radio
+      </div>
+
+      <a
+        class="listen"
+        href="https://soundcloud.com/txturmusic/sets/house-mixtur-radio"
+        target="_blank"
+        rel="noopener noreferrer">
+        → FULL MIX / SOUNDCLOUD
+      </a>
+
+    </section>
+
+    <!-- PLATEFORMES -->
 
     <nav class="platforms">
 
