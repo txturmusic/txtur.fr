@@ -31,19 +31,21 @@
     }
 
     .logo {
-      margin: 0 0 18px;
+      margin: 0;
       font-size: 34px;
       font-weight: 700;
       letter-spacing: 0.34em;
     }
 
     .radio-names {
-      margin: 0;
+      margin: 18px 0 0;
       font-size: 12px;
       line-height: 1.8;
       letter-spacing: 0.18em;
       color: #555;
     }
+
+    /* MIXES */
 
     .list {
       border-top: 1px solid #b8b8b5;
@@ -101,9 +103,12 @@
       font-weight: 300;
     }
 
-    .item:hover {
+    .item:hover,
+    .platform:hover {
       background: rgba(0, 0, 0, 0.025);
     }
+
+    /* PLATEFORMES */
 
     .platforms {
       border-bottom: 1px solid #b8b8b5;
@@ -149,25 +154,24 @@
       color: #555;
     }
 
+    /* FOOTER */
+
     footer {
       text-align: center;
       padding-top: 45px;
     }
 
     .copyright {
-      margin: 0 0 16px;
+      margin: 0;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.08em;
     }
 
-    .tagline {
-      margin: 0;
-      font-size: 11px;
-      color: #777;
-    }
+    /* MOBILE */
 
     @media (max-width: 600px) {
+
       .page {
         width: calc(100% - 24px);
         padding-top: 45px;
@@ -187,11 +191,7 @@
         min-height: 105px;
       }
 
-      .item-image {
-        width: 105px;
-        height: 105px;
-      }
-
+      .item-image,
       .platform-image {
         width: 105px;
         height: 105px;
@@ -218,6 +218,10 @@
         font-size: 14px;
       }
 
+      .platform-subtitle {
+        font-size: 9px;
+      }
+
       .arrow {
         font-size: 20px;
       }
@@ -229,6 +233,8 @@
 
   <main class="page">
 
+    <!-- HEADER -->
+
     <header>
       <h1 class="logo">T X T U R</h1>
 
@@ -238,6 +244,8 @@
       </p>
     </header>
 
+
+    <!-- MIXES -->
 
     <section class="list">
 
@@ -288,34 +296,13 @@
 
       </a>
 
-
-      <!-- HMR_002 -->
-
-      <a
-        class="item"
-        href="https://www.youtube.com/@txtur_music"
-        target="_blank"
-        rel="noopener noreferrer">
-
-        <img
-          class="item-image"
-          src="HMR_002 1x1.PNG"
-          alt="HMR_002">
-
-        <div class="item-info">
-          <h2 class="item-title">HMR_002</h2>
-          <p class="item-subtitle">House Mixtur Radio</p>
-          <p class="item-platform">YOUTUBE</p>
-        </div>
-
-        <div class="arrow">→</div>
-
-      </a>
-
     </section>
 
 
+    <!-- PLATEFORMES -->
+
     <nav class="platforms">
+
 
       <!-- SOUNDCLOUD -->
 
@@ -328,7 +315,7 @@
         <img
           class="platform-image"
           src="soundcloud.png"
-          alt="SoundCloud">
+          alt="soundcloud">
 
         <div class="platform-info">
           <h2 class="platform-title">SOUNDCLOUD</h2>
@@ -351,7 +338,7 @@
         <img
           class="platform-image"
           src="youtube.png"
-          alt="YouTube">
+          alt="youtube">
 
         <div class="platform-info">
           <h2 class="platform-title">YOUTUBE</h2>
@@ -373,8 +360,8 @@
 
         <img
           class="platform-image"
-          src="instagram.png"
-          alt="Instagram">
+          src="insta.png"
+          alt="instagram">
 
         <div class="platform-info">
           <h2 class="platform-title">INSTAGRAM</h2>
@@ -385,12 +372,36 @@
 
       </a>
 
+
+      <!-- TIKTOK -->
+
+      <a
+        class="platform"
+        href="https://www.tiktok.com/@txtur_music"
+        target="_blank"
+        rel="noopener noreferrer">
+
+        <img
+          class="platform-image"
+          src="tiktok.png"
+          alt="tiktok">
+
+        <div class="platform-info">
+          <h2 class="platform-title">TIKTOK</h2>
+          <p class="platform-subtitle">@txtur_music</p>
+        </div>
+
+        <div class="arrow">→</div>
+
+      </a>
+
     </nav>
 
 
+    <!-- FOOTER -->
+
     <footer>
       <p class="copyright">TXTUR ©</p>
-      <p class="tagline">Electronic music through matter and texture</p>
     </footer>
 
   </main>
