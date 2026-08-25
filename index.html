@@ -6,6 +6,13 @@
 
   <title>TXTUR</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap"
+    rel="stylesheet"
+  >
+
   <style>
     * {
       box-sizing: border-box;
@@ -15,7 +22,7 @@
       margin: 0;
       background: #ECECEA;
       color: #151515;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "Courier New", Courier, monospace;
       min-height: 100vh;
     }
 
@@ -25,36 +32,28 @@
       padding: 70px 0 55px;
     }
 
-    /* HEADER */
-
     header {
       text-align: center;
       padding-bottom: 55px;
     }
 
+    /* LOGO TXTUR */
     .logo {
-      margin: 0;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0 0 18px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
       font-size: 34px;
       font-weight: 300;
       letter-spacing: 0.38em;
-      line-height: 1;
     }
 
-    .logo-x {
-      font-weight: 800;
-    }
-
+    /* TEXTE SOUS TXTUR */
     .radio-names {
-      margin: 20px 0 0;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
       font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 0.14em;
+      line-height: 1.8;
+      letter-spacing: 0.18em;
       color: #555;
     }
-
-    /* MIXES */
 
     .list {
       border-top: 1px solid #b8b8b5;
@@ -83,8 +82,10 @@
       justify-content: center;
     }
 
+    /* TITRES DES MIX */
     .item-title {
       margin: 0 0 10px;
+      font-family: "Roboto Slab", Georgia, serif;
       font-size: 21px;
       font-weight: 700;
       letter-spacing: 0.08em;
@@ -118,7 +119,6 @@
     }
 
     /* PLATEFORMES */
-
     .platforms {
       border-bottom: 1px solid #b8b8b5;
     }
@@ -150,8 +150,10 @@
       justify-content: center;
     }
 
+    /* TITRES DES PLATEFORMES */
     .platform-title {
       margin: 0 0 10px;
+      font-family: "Roboto Slab", Georgia, serif;
       font-size: 18px;
       font-weight: 700;
       letter-spacing: 0.08em;
@@ -163,22 +165,25 @@
       color: #555;
     }
 
-    /* FOOTER */
-
     footer {
       text-align: center;
       padding-top: 45px;
     }
 
     .copyright {
-      margin: 0;
+      margin: 0 0 16px;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.08em;
     }
 
-    /* MOBILE */
+    .tagline {
+      margin: 0;
+      font-size: 11px;
+      color: #777;
+    }
 
+    /* MOBILE */
     @media (max-width: 600px) {
 
       .page {
@@ -188,12 +193,10 @@
 
       .logo {
         font-size: 27px;
-        letter-spacing: 0.32em;
       }
 
       .radio-names {
         font-size: 10px;
-        letter-spacing: 0.10em;
       }
 
       .item,
@@ -202,7 +205,11 @@
         min-height: 105px;
       }
 
-      .item-image,
+      .item-image {
+        width: 105px;
+        height: 105px;
+      }
+
       .platform-image {
         width: 105px;
         height: 105px;
@@ -229,10 +236,6 @@
         font-size: 14px;
       }
 
-      .platform-subtitle {
-        font-size: 9px;
-      }
-
       .arrow {
         font-size: 20px;
       }
@@ -245,42 +248,37 @@
   <main class="page">
 
     <!-- HEADER -->
-
     <header>
 
-      <h1 class="logo">
-        T <span class="logo-x">X</span> T U R
-      </h1>
+      <h1 class="logo">T X T U R</h1>
 
       <p class="radio-names">
-        House &amp; Techno radio
+        HOUSE &amp; TECHNO RADIO
       </p>
 
     </header>
 
 
     <!-- MIXES -->
-
     <section class="list">
 
       <!-- TMR_001 -->
-
       <a
         class="item"
         href="https://youtu.be/zc9zYC2cApA?si=NTfoKWc4qhNejgla"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
 
         <img
           class="item-image"
           src="TMR_001 1x1.PNG"
-          alt="TMR_001">
+          alt="TMR_001"
+        >
 
         <div class="item-info">
 
-          <h2 class="item-title">
-            TMR_001
-          </h2>
+          <h2 class="item-title">TMR_001</h2>
 
           <p class="item-subtitle">
             Techno Mixtur Radio
@@ -292,31 +290,28 @@
 
         </div>
 
-        <div class="arrow">
-          →
-        </div>
+        <div class="arrow">→</div>
 
       </a>
 
 
       <!-- HMR_001 -->
-
       <a
         class="item"
         href="https://soundcloud.com/txturmusic/hmr_001?in=txturmusic/sets/house-mixtur-radio"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
 
         <img
           class="item-image"
           src="HMR_001 1x1.PNG"
-          alt="HMR_001">
+          alt="HMR_001"
+        >
 
         <div class="item-info">
 
-          <h2 class="item-title">
-            HMR_001
-          </h2>
+          <h2 class="item-title">HMR_001</h2>
 
           <p class="item-subtitle">
             House Mixtur Radio
@@ -328,9 +323,7 @@
 
         </div>
 
-        <div class="arrow">
-          →
-        </div>
+        <div class="arrow">→</div>
 
       </a>
 
@@ -338,21 +331,22 @@
 
 
     <!-- PLATEFORMES -->
-
     <nav class="platforms">
 
-      <!-- SOUNDCLOUD -->
 
+      <!-- SOUNDCLOUD -->
       <a
         class="platform"
         href="https://soundcloud.com/txturmusic"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
 
         <img
           class="platform-image"
           src="soundcloud.png"
-          alt="SoundCloud">
+          alt="SoundCloud"
+        >
 
         <div class="platform-info">
 
@@ -361,30 +355,29 @@
           </h2>
 
           <p class="platform-subtitle">
-            TXTUR
+            txturmusic
           </p>
 
         </div>
 
-        <div class="arrow">
-          →
-        </div>
+        <div class="arrow">→</div>
 
       </a>
 
 
       <!-- YOUTUBE -->
-
       <a
         class="platform"
         href="https://www.youtube.com/@txtur_music"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
 
         <img
           class="platform-image"
           src="youtube.png"
-          alt="YouTube">
+          alt="YouTube"
+        >
 
         <div class="platform-info">
 
@@ -393,30 +386,29 @@
           </h2>
 
           <p class="platform-subtitle">
-            TXTUR
+            txtur_music
           </p>
 
         </div>
 
-        <div class="arrow">
-          →
-        </div>
+        <div class="arrow">→</div>
 
       </a>
 
 
       <!-- INSTAGRAM -->
-
       <a
         class="platform"
         href="https://www.instagram.com/hi.txtur/"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
 
         <img
           class="platform-image"
-          src="insta.png"
-          alt="Instagram">
+          src="instagram.png"
+          alt="Instagram"
+        >
 
         <div class="platform-info">
 
@@ -430,25 +422,24 @@
 
         </div>
 
-        <div class="arrow">
-          →
-        </div>
+        <div class="arrow">→</div>
 
       </a>
 
 
       <!-- TIKTOK -->
-
       <a
         class="platform"
         href="https://www.tiktok.com/@txtur.music"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+      >
 
         <img
           class="platform-image"
           src="tik tok.png"
-          alt="TikTok">
+          alt="TikTok"
+        >
 
         <div class="platform-info">
 
@@ -462,21 +453,23 @@
 
         </div>
 
-        <div class="arrow">
-          →
-        </div>
+        <div class="arrow">→</div>
 
       </a>
+
 
     </nav>
 
 
     <!-- FOOTER -->
-
     <footer>
 
       <p class="copyright">
         TXTUR ©
+      </p>
+
+      <p class="tagline">
+        Electronic music through matter and texture
       </p>
 
     </footer>
