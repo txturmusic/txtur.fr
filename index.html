@@ -35,7 +35,7 @@
     }
 
     .logo {
-      margin: 0;
+      margin: 0 0 18px;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 34px;
       font-weight: 300;
@@ -48,13 +48,29 @@
     }
 
     .radio-names {
-      margin: 20px 0 0;
+      margin: 0;
       font-family: "Courier New", Courier, monospace;
       font-size: 12px;
       font-weight: 400;
       letter-spacing: 0.14em;
       color: #555;
     }
+
+
+    /* =========================
+       SECTION TITLE
+    ========================= */
+
+    .section-title {
+      margin: 0;
+      padding: 0 0 18px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #555;
+    }
+
 
     /* =========================
        MIXES
@@ -66,7 +82,7 @@
 
     .item {
       display: grid;
-      grid-template-columns: 180px 1fr 55px;
+      grid-template-columns: 180px 1fr auto;
       min-height: 155px;
       border-bottom: 1px solid #b8b8b5;
       text-decoration: none;
@@ -87,19 +103,9 @@
       justify-content: center;
     }
 
-    /*
-      Police slab serif proche des titres
-      présents sur les couvertures TXTUR.
-    */
-
     .item-title {
       margin: 0 0 10px;
-      font-family:
-        "Roboto Slab",
-        Rockwell,
-        "Courier New",
-        Georgia,
-        serif;
+      font-family: Rockwell, "Roboto Slab", Georgia, serif;
       font-size: 21px;
       font-weight: 800;
       letter-spacing: 0.06em;
@@ -108,10 +114,7 @@
 
     .item-subtitle {
       margin: 0 0 14px;
-      font-family:
-        "Courier New",
-        Courier,
-        monospace;
+      font-family: "Courier New", Courier, monospace;
       font-size: 12px;
       color: #555;
       letter-spacing: 0.02em;
@@ -119,15 +122,26 @@
 
     .item-platform {
       margin: 0;
-      font-family:
-        "Roboto Slab",
-        Rockwell,
-        "Courier New",
-        Georgia,
-        serif;
+      font-family: Rockwell, "Roboto Slab", Georgia, serif;
       font-size: 11px;
       font-weight: 800;
       letter-spacing: 0.08em;
+    }
+
+    .item-action {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-right: 18px;
+      white-space: nowrap;
+    }
+
+    .play-now {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #555;
     }
 
     .arrow {
@@ -144,11 +158,17 @@
       background: rgba(0, 0, 0, 0.025);
     }
 
+
     /* =========================
        PLATEFORMES
     ========================= */
 
+    .platform-section {
+      margin-top: 55px;
+    }
+
     .platforms {
+      border-top: 1px solid #b8b8b5;
       border-bottom: 1px solid #b8b8b5;
     }
 
@@ -179,30 +199,14 @@
       justify-content: center;
     }
 
-    .platform-title {
-      margin: 0 0 10px;
-      font-family:
-        "Roboto Slab",
-        Rockwell,
-        "Courier New",
-        Georgia,
-        serif;
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: 0.07em;
-      line-height: 1.1;
-    }
-
     .platform-subtitle {
       margin: 0;
-      font-family:
-        "Courier New",
-        Courier,
-        monospace;
-      font-size: 11px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 12px;
       color: #555;
       letter-spacing: 0.02em;
     }
+
 
     /* =========================
        FOOTER
@@ -215,14 +219,12 @@
 
     .copyright {
       margin: 0;
-      font-family:
-        "Courier New",
-        Courier,
-        monospace;
+      font-family: "Courier New", Courier, monospace;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.08em;
     }
+
 
     /* =========================
        MOBILE
@@ -245,20 +247,21 @@
         letter-spacing: 0.10em;
       }
 
-      .item,
-      .platform {
-        grid-template-columns: 105px 1fr 38px;
+      .section-title {
+        font-size: 10px;
+      }
+
+      .item {
+        grid-template-columns: 105px 1fr auto;
         min-height: 105px;
       }
 
-      .item-image,
-      .platform-image {
+      .item-image {
         width: 105px;
         height: 105px;
       }
 
-      .item-info,
-      .platform-info {
+      .item-info {
         padding: 18px 15px;
       }
 
@@ -274,16 +277,39 @@
         font-size: 9px;
       }
 
-      .platform-title {
-        font-size: 14px;
+      .item-action {
+        gap: 5px;
+        padding-right: 8px;
       }
 
-      .platform-subtitle {
-        font-size: 9px;
+      .play-now {
+        font-size: 7px;
       }
 
       .arrow {
         font-size: 20px;
+      }
+
+      .platform-section {
+        margin-top: 40px;
+      }
+
+      .platform {
+        grid-template-columns: 105px 1fr 38px;
+        min-height: 105px;
+      }
+
+      .platform-image {
+        width: 105px;
+        height: 105px;
+      }
+
+      .platform-info {
+        padding: 18px 15px;
+      }
+
+      .platform-subtitle {
+        font-size: 9px;
       }
     }
   </style>
@@ -293,9 +319,8 @@
 
   <main class="page">
 
-    <!-- =========================
-         HEADER
-    ========================= -->
+
+    <!-- HEADER -->
 
     <header>
 
@@ -310,226 +335,237 @@
     </header>
 
 
-    <!-- =========================
-         MIXES
-    ========================= -->
+    <!-- RECENT MIXES -->
 
-    <section class="list">
+    <section class="mix-section">
 
-      <!-- TMR_001 -->
+      <h2 class="section-title">
+        RECENT MIXES
+      </h2>
 
-      <a
-        class="item"
-        href="https://youtu.be/zc9zYC2cApA?si=NTfoKWc4qhNejgla"
-        target="_blank"
-        rel="noopener noreferrer">
-
-        <img
-          class="item-image"
-          src="TMR_001 1x1.PNG"
-          alt="TMR_001">
-
-        <div class="item-info">
-
-          <h2 class="item-title">
-            TMR_001
-          </h2>
-
-          <p class="item-subtitle">
-            Techno Mixtur Radio
-          </p>
-
-          <p class="item-platform">
-            YOUTUBE
-          </p>
-
-        </div>
-
-        <div class="arrow">
-          →
-        </div>
-
-      </a>
+      <div class="list">
 
 
-      <!-- HMR_001 -->
+        <!-- TMR_001 -->
 
-      <a
-        class="item"
-        href="https://soundcloud.com/txturmusic/hmr_001?in=txturmusic/sets/house-mixtur-radio"
-        target="_blank"
-        rel="noopener noreferrer">
+        <a
+          class="item"
+          href="https://youtu.be/zc9zYC2cApA?si=NTfoKWc4qhNejgla"
+          target="_blank"
+          rel="noopener noreferrer">
 
-        <img
-          class="item-image"
-          src="HMR_001 1x1.PNG"
-          alt="HMR_001">
+          <img
+            class="item-image"
+            src="TMR_001 1x1.PNG"
+            alt="TMR_001">
 
-        <div class="item-info">
+          <div class="item-info">
 
-          <h2 class="item-title">
-            HMR_001
-          </h2>
+            <h3 class="item-title">
+              TMR_001
+            </h3>
 
-          <p class="item-subtitle">
-            House Mixtur Radio
-          </p>
+            <p class="item-subtitle">
+              Techno Mixtur Radio
+            </p>
 
-          <p class="item-platform">
-            SOUNDCLOUD
-          </p>
+            <p class="item-platform">
+              YOUTUBE
+            </p>
 
-        </div>
+          </div>
 
-        <div class="arrow">
-          →
-        </div>
+          <div class="item-action">
 
-      </a>
+            <span class="play-now">
+              PLAY NOW
+            </span>
+
+            <span class="arrow">
+              →
+            </span>
+
+          </div>
+
+        </a>
+
+
+        <!-- HMR_001 -->
+
+        <a
+          class="item"
+          href="https://soundcloud.com/txturmusic/hmr_001?in=txturmusic/sets/house-mixtur-radio"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <img
+            class="item-image"
+            src="HMR_001 1x1.PNG"
+            alt="HMR_001">
+
+          <div class="item-info">
+
+            <h3 class="item-title">
+              HMR_001
+            </h3>
+
+            <p class="item-subtitle">
+              House Mixtur Radio
+            </p>
+
+            <p class="item-platform">
+              SOUNDCLOUD
+            </p>
+
+          </div>
+
+          <div class="item-action">
+
+            <span class="play-now">
+              PLAY NOW
+            </span>
+
+            <span class="arrow">
+              →
+            </span>
+
+          </div>
+
+        </a>
+
+      </div>
 
     </section>
 
 
-    <!-- =========================
-         PLATEFORMES
-    ========================= -->
+    <!-- PLATEFORMES -->
 
-    <nav class="platforms">
+    <section class="platform-section">
 
+      <h2 class="section-title">
+        CONNECT
+      </h2>
 
-      <!-- SOUNDCLOUD -->
-
-      <a
-        class="platform"
-        href="https://soundcloud.com/txturmusic"
-        target="_blank"
-        rel="noopener noreferrer">
-
-        <img
-          class="platform-image"
-          src="soundcloud.png"
-          alt="SoundCloud">
-
-        <div class="platform-info">
-
-          <h2 class="platform-title">
-            SOUNDCLOUD
-          </h2>
-
-          <p class="platform-subtitle">
-            txturmusic
-          </p>
-
-        </div>
-
-        <div class="arrow">
-          →
-        </div>
-
-      </a>
+      <nav class="platforms">
 
 
-      <!-- YOUTUBE -->
+        <!-- SOUNDCLOUD -->
 
-      <a
-        class="platform"
-        href="https://www.youtube.com/@txtur_music"
-        target="_blank"
-        rel="noopener noreferrer">
+        <a
+          class="platform"
+          href="https://soundcloud.com/txturmusic"
+          target="_blank"
+          rel="noopener noreferrer">
 
-        <img
-          class="platform-image"
-          src="youtube.png"
-          alt="YouTube">
+          <img
+            class="platform-image"
+            src="soundcloud.png"
+            alt="SoundCloud">
 
-        <div class="platform-info">
+          <div class="platform-info">
 
-          <h2 class="platform-title">
-            YOUTUBE
-          </h2>
+            <p class="platform-subtitle">
+              txturmusic
+            </p>
 
-          <p class="platform-subtitle">
-            txtur_music
-          </p>
+          </div>
 
-        </div>
+          <div class="arrow">
+            →
+          </div>
 
-        <div class="arrow">
-          →
-        </div>
-
-      </a>
+        </a>
 
 
-      <!-- INSTAGRAM -->
+        <!-- YOUTUBE -->
 
-      <a
-        class="platform"
-        href="https://www.instagram.com/hi.txtur/"
-        target="_blank"
-        rel="noopener noreferrer">
+        <a
+          class="platform"
+          href="https://www.youtube.com/@txtur_music"
+          target="_blank"
+          rel="noopener noreferrer">
 
-        <img
-          class="platform-image"
-          src="insta.png"
-          alt="Instagram">
+          <img
+            class="platform-image"
+            src="youtube.png"
+            alt="YouTube">
 
-        <div class="platform-info">
+          <div class="platform-info">
 
-          <h2 class="platform-title">
-            INSTAGRAM
-          </h2>
+            <p class="platform-subtitle">
+              txtur_music
+            </p>
 
-          <p class="platform-subtitle">
-            @hi.txtur
-          </p>
+          </div>
 
-        </div>
+          <div class="arrow">
+            →
+          </div>
 
-        <div class="arrow">
-          →
-        </div>
-
-      </a>
+        </a>
 
 
-      <!-- TIKTOK -->
+        <!-- INSTAGRAM -->
 
-      <a
-        class="platform"
-        href="https://www.tiktok.com/@txtur.music"
-        target="_blank"
-        rel="noopener noreferrer">
+        <a
+          class="platform"
+          href="https://www.instagram.com/hi.txtur/"
+          target="_blank"
+          rel="noopener noreferrer">
 
-        <img
-          class="platform-image"
-          src="tik tok.png"
-          alt="TikTok">
+          <img
+            class="platform-image"
+            src="insta.png"
+            alt="Instagram">
 
-        <div class="platform-info">
+          <div class="platform-info">
 
-          <h2 class="platform-title">
-            TIKTOK
-          </h2>
+            <p class="platform-subtitle">
+              @hi.txtur
+            </p>
 
-          <p class="platform-subtitle">
-            @txtur.music
-          </p>
+          </div>
 
-        </div>
+          <div class="arrow">
+            →
+          </div>
 
-        <div class="arrow">
-          →
-        </div>
-
-      </a>
-
-    </nav>
+        </a>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+        <!-- TIKTOK -->
+
+        <a
+          class="platform"
+          href="https://www.tiktok.com/@txtur.music"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <img
+            class="platform-image"
+            src="tik tok.png"
+            alt="TikTok">
+
+          <div class="platform-info">
+
+            <p class="platform-subtitle">
+              @txtur.music
+            </p>
+
+          </div>
+
+          <div class="arrow">
+            →
+          </div>
+
+        </a>
+
+      </nav>
+
+    </section>
+
+
+    <!-- FOOTER -->
 
     <footer>
 
@@ -538,6 +574,7 @@
       </p>
 
     </footer>
+
 
   </main>
 
